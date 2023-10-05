@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div id="players">
+            <input type="text" id="player1" placeholder="Player 1">
+            <input type="text" id="player2" placeholder="Player 2">
+        </div>
+        <div id="score">
+            <span id="player1-score">Player 1: 0</span>
+            <span id="player2-score">Player 2: 0</span>
+        </div>
+        <div id="board-container">
+            <table id="board">
+                <tr>
+                    <td class="cell" onclick="makeMove(0, 0)"></td>
+                    <td class="cell" onclick="makeMove(0, 1)"></td>
+                    <td class="cell" onclick="makeMove(0, 2)"></td>
+                </tr>
+                <tr>
+                    <td class="cell" onclick="makeMove(1, 0)"></td>
+                    <td class="cell" onclick="makeMove(1, 1)"></td>
+                    <td class="cell" onclick="makeMove(1, 2)"></td>
+                </tr>
+                <tr>
+                    <td class="cell" onclick="makeMove(2, 0)"></td>
+                    <td class="cell" onclick="makeMove(2, 1)"></td>
+                    <td class="cell" onclick="makeMove(2, 2)"></td>
+                </tr>
+            </table>
+        </div>
+        <button onclick="newGame()">New Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
